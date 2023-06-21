@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sherif Gwally's Portfolio Website</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><h1><a href="index.html"><i class="fas fa-code"></i> Sherif Gwally</a></h1></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://github.com/sherifmgold" aria-hidden="true"><i class="fab fa-github"></i> <span class="sr-only">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/sherif-mamdouh-132385280/" aria-hidden="true"><i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+            <li><a href="https://www.dropbox.com/s/kz2fd95ypxmlnkl/SHERIF_GWALLY_-_Software_Engineering_Student.pdf?dl=0" class="button">Resume</a></li>
+        </ul>
+    </nav>
+    
+    <section id="intro">
+        <p class="name">Hi, my name is <span>Sherif Gwally.</span></p>
+        <h2>I am a student specializing in HTML, CSS, and JavaScript</h2>
+        <p>Currently, I am working on improving my skills to become a professional web developer.</p>
+    </section>
+    <div class="gradient"></div>
+    <div class="section-plum">
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>If you are interested in sending me an email, click the button below.</p>
+        <p><a href="mailto:sherifmbronze@gmail.com" class="button">E-Mail</a></p>
+    </section>
+    </div>
+    <div class="gradient"></div>
+    <footer>
+        <h2>Sherif Gwally &middot; Software Engineering Student</h2>
+        <ul>
+            <li>
+                <a href="https://www.linkedin.com/in/sherif-mamdouh-132385280/" target="_blank">
+                    <span class="fab fa-linkedin" aria-hidden="true"></span>
+                    <span class="sr-only">LinkedIn</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/sherifmgold" target="_blank">
+                    <span class="fab fa-github-square" aria-hidden="true"></span>
+                    <span class="sr-only">Github</span>
+                </a>
+            </li>
+            <li>
+                <a href="mailto:sherifmbronze@gmail.com">
+                    <span class="fas fa-envelope" aria-hidden="true"></span>
+                    <span class="sr-only">Email</span>
+                </a>
+            </li>
+        </ul>
+        <p><small>&copy; 2023 Sherif Gwally. All rights reserved.</small></p>
+    </footer>
+</body>
+<script>
+    let buttons = document.getElementsByClassName("button");
+    let button1 = buttons[0];
+    let button2 = buttons[1];
+
+    button1.addEventListener("mouseover", (event) => {
+        button1.textContent = "Click here!";
+    });
+
+    button1.addEventListener("mouseout", (event) => {
+        button1.textContent = "Resume";
+    });
+
+    button2.addEventListener("mouseover", (event) => {
+        button2.textContent = "Click here!";
+    });
+
+    button2.addEventListener("mouseout", (event) => {
+        button2.textContent = "E-Mail";
+    });
+</script>
+</html>
